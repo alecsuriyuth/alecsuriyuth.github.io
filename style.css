@@ -1,0 +1,90 @@
+/* CSS CODING */
+
+/* note nested comments have been disabled by adding a space between '*' and '/' */
+
+body { background-color: white;  font-family: montserrat;  max-width: 100%; max-height: 100%; padding: 0px; /*space above, right, bottom, left */ margin: 0px; color: black; min-width: 800px }
+
+/* titles */
+ul { list-style-type: none; margin: 0; padding: 0; overflow: hidden; background-color: #333 }
+li { float: left }
+li a { display: block; color: white; text-align: center; padding: 0.875em 1em; text-decoration: none }
+li a:hover { background-color: #111 }
+
+/* top bar */
+.top { position: fixed; top: 0px; width: 100%; z-index: +2}
+
+/* bottom navigation bar */
+.bottom { /*position:fixed*/; bottom: 0px; width: 100% }
+.bottomh { position:fixed; bottom: 0px; width: 100% }
+
+/* title */
+.title { text-align: center; position: relative; padding-bottom: 1em; padding-top: 3em}
+.title h2 { margin: 0%; margin-bottom: 3em}
+.title h1 { position: relative; font-size: 8em; font-family: montserrat; margin: 0%; padding: 0%}
+
+/* content */
+.content { background-color: inherit; text-align: center; margin-top: 12%; color: black }
+
+.homepagelinks h2 a { color: black; text-decoration: none }
+.homepagelinks a:hover {color: dimgrey}
+
+.content a { color: black; text-decoration: none}
+
+/* grid */
+img { display: block; max-width: 100%; height: }
+
+ /* sets up grid */
+.grid {  display: grid; grid-template-columns: 1fr 1fr 1fr; max-width: 60%; margin-left: 20%;  position: relative; margin-bottom: 5%; margin-top: 12%; grid-gap: 0.2em}  
+
+/* CV Styling */
+.cv { background-color: white; width: 60%; margin: 8% 20% 12% 20%; text-align: left; font-size: 1em; color: black }
+.extralist {width: 100%}
+.extralist ul { background-color: inherit; width: 80%; margin-left: 10%}
+.extralist li {width: 100%; text-align: left}
+
+.cvhead {   border-bottom: 0.1em solid #ccc; margin-top: 4em; margin-bottom: 1em; width: 100%; text-align: center; display: block; padding-bottom: 0.2em}
+.sep {display: block; height: 2em; width: 100%}
+.bottomsep {display: block; height: 10em; width: 100%}
+
+.wrapper {  display: grid; grid-template-columns: 33.5% 66.5%}
+.one {  grid-column: 1; grid-row: 1; grid-row-end: 3}
+.two {  grid-column: 2; grid-row: 1; margin-bottom: 1.5em}
+.two p {padding-top: 1em; margin-left: 1em; margin-right: 3em}
+.three {    grid-column: 2; grid-row: 2; margin-bottom: 1.5em}
+.three p {padding-top: 1em; margin-left: 1em; margin-right: 3em}
+
+.job { display: block; position: relative; width: 90%; margin-left: 5%; margin-right: 5%}
+.job h4, h5 { position: relative;  display: inline; top: 0.25em; margin: 0px; padding: 0%}
+.job h3 {margin-top: 1em}
+.job h5 { position: absolute; right: 0em; top: 0em}
+.job p { margin-left: 1em; padding-top: 0.5em; margin-right: 3em}
+.job a:hover {color: dimgrey}
+
+.exc { background-color: aqua}
+
+.lists ul { width: 80%; margin-left: 10%; position: relative}
+.list { width: 100%; float: left; margin-bottom: 1em; margin-top: 0em; top: 1em; background-color: white} 
+.list li { position: relative; vertical-align: middle; width: 100%; text-align: center; padding-top: 0.2em; padding-bottom: 0.2em; border-bottom: 0.05em solid #ccc; border-bottom-width: 100%}
+
+/*CYCLING*/
+.sponsors {margin-bottom: 3em; margin-top: 2em}
+.sponsors h2 {  font-size: 1.3em; margin: 0%; padding: 0%}
+.sponsors h3 {  font-size: 1.3em; margin: 0%; padding: 0%}
+.sponsors h4 {  font-size: 0.7em; margin: 0%; padding: 0%}
+.sponsors a:hover {color:dimgrey}
+
+/*CONNECT*/
+.connect {margin-bottom: 3em; margin-top: 2em}
+.connect h2 {  font-size: 1em; margin: 0%; padding: 0.1em}
+.connect a:hover {color:dimgrey}
+
+.schedule {position: relative; text-align: left; margin-left: 25%; width: 50%; margin-bottom: 10em}
+.schedule h3 {margin-bottom: 0.5em}
+.cyc {  width: 100%; position: relative; text-align: left; background-color: white}
+.imagecyc {position: relative; width: 50%; margin-left: 25%; margin-bottom: 8em; margin-top: 0em}
+.imagecyc h4 {margin-top: 0.5em}
+table {width: 100%}
+td {padding: 0.1em}
+.overall {position: relative; text-align: left; margin-left: 25%; width: 50%; margin-bottom: 5em}
+
+.hv {height: 70vh}
