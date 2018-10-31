@@ -1,2 +1,2 @@
 # alecsuriyuth.github.io
-Website
+A personal website to promote personal brand and experiences.
