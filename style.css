@@ -2,7 +2,7 @@
 
 /* note nested comments have been disabled by adding a space between '*' and '/' */
 
-body { background-color: white;  font-weight: normal; font-family: montserrat;  max-width: 100%; max-height: 100%; padding: 0px; /*space above, right, bottom, left */ margin: 0px; color: black; min-width: 800px }
+body { background-color: white;  font-weight: 200; font-family: montserrat;  max-width: 100%; max-height: 100%; padding: 0px; /*space above, right, bottom, left */ margin: 0px; color: black; min-width: 800px }
 
 /* titles */
 ul { list-style-type: none; margin: 0; padding: 0; overflow: hidden; background-color: #333 }
