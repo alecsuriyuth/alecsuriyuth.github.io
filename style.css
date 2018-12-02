@@ -2,29 +2,31 @@
 
 /* MOBILE FIRST DESIGN */
 
-@media all and (max-width: 769px) {
+@media all and (max-width: 767px) {
 /*body*/
-body { background-color: white;  font-weight: normal; font-family: montserrat; text-rendering: optimizeLegibility; max-width: 100%; max-height: 100%; padding: 0px; /*space above, right, bottom, left */ margin: 0px; color: black}
+body { background-color: white;  font-weight: normal; font-family: montserrat; text-rendering: optimizeLegibility; width: 100%;  max-width: 100%; max-height: 100%; padding: 0px; /*space above, right, bottom, left */ margin: 0px; color: black}
 
 /* header */
-ul { list-style-type: none; margin: 0; padding: 0; overflow: hidden; background-color: #333; width: 100% }
-li { float:left }
-li header { float: center}
-li a { display: block; color: white; text-align: center; padding: 0.875em 1em; text-decoration: none }
-li a:hover { background-color: #111 }
-
-/* top bar */
-.top { position: absolute; top: 0px; width: 100vw; z-index: +2}
-#header { display: block; width: 100%}
+.gridt { display: grid; grid-template-columns: 1fr 1fr 1fr; width: 100%; text-align: center; overflow: hidden; font-weight: bold; font-size: 100%}
+.gridt a { color: white; text-decoration: none}
+.T { grid-row: 1; grid-row-end: 1; grid-column-start: 1; grid-column-end: 4; margin: 1.2em 0em 0.6em 0em; background-color: white }
+.T a { color: #333; font-size: 10vw}
+.L { grid-row: 2; grid-row-end: 2; grid-column: 1; padding: 0.5em; background-color: #333; margin: 0.2em 0.2em 0.2em 0.4em }
+.C { grid-row: 2; grid-row-end: 2; grid-column: 2; padding: 0.5em; background-color: #333; margin: 0.2em }
+.R { grid-row: 2; grid-row-end: 2; grid-column: 3; padding: 0.5em; background-color: #333; margin: 0.2em 0.4em 0.2em 0.2em }
     
 /* bottom navigation bar */
-.bottom { /*position:fixed*/; bottom: 0px; width: }
-.bottomh { position:fixed; bottom: 0px; width: 100% }
+.bottomh { background-color: #333; margin: 0.4em 0em 0.4em 0.4em;  font-weight: bold; padding: 0.5em}
+.bottomh a { color: white; text-decoration: none}
 
+/* homepage/connect bottom navigation bar */
+.homepagefooter { display: block; width: 100%;  position: fixed; bottom: 0; left: 0; background-color: #333; margin: 0.4em; padding: 0.5em }
+.homepagefooter a { color: white; font-weight: bold; text-decoration: none}
+    
 /* title */
-.title { text-align: center; position: center; padding-bottom: 1em; display: block; width: 100%}
+.title { text-align: center; position: center; padding-bottom: 1em; display: block; width: 100vw; overflow: hidden}
 .title h2 { margin: 0%; margin-bottom: 3em; font-size: 4vw}
-.title h1 { position: center;  font-size: 15vw; font-family: montserrat; margin-top: 25vh}
+.title h1 { position: center;  font-size: 15vw; font-family: montserrat; margin-top: 15vh}
 
 /* special title */
 /* from https://css-tricks.com/swapping-out-text-five-different-ways/ */
@@ -61,7 +63,7 @@ img { display: block; max-width: 100%; height: }
 .sep {display: block; height: 2em; width: 100%}
 .bottomsep {display: block; height: 10em; width: 100%}
 
-.wrapper { display: block; width: 80%; margin-left: 10%; margin-right: 10%; grid-template-columns: 80; margin-left: 10%; margin-right: 10%}
+.wrapper { display: block; width: 100%; grid-template-columns: 80 }
 .one { display: inline-block; margin-bottom: 2em}
 .one h4 { text-align: center}
 .two { margin-bottom: 2em}
@@ -71,7 +73,7 @@ img { display: block; max-width: 100%; height: }
 .three h4 { text-align: center}
 .three p { padding-top: 1em; margin-left: 1em}
 
-.job { display: block; position: relative; width: 90%; margin-left: 5%; margin-right: 5%}
+.job { display: block; position: relative; width: 100% }
 .job h4, h5 { position: relative;  display: block; top: 0em; margin: 0px; padding: 0%}
 .job h3 { margin-top: 1em}
 .job h5 { margin-top: 0.15em}
@@ -115,23 +117,30 @@ td {padding: 0.1em}
 
 /* DESKTOP */
 
-@media all and (min-width: 769px) { 
+@media all and (min-width: 767px) { 
 
 /*body*/
 body { background-color: white;  font-weight: normal; font-family: montserrat; text-rendering: optimizeLegibility; max-width: 100%; max-height: 100%; padding: 0px; /*space above, right, bottom, left */ margin: 0px; color: black; min-width: 800px}
 
 /* lists */
-ul { list-style-type: none; margin: 0; padding: 0; overflow: hidden; background-color: #333 }
-li { float: left }
-li a { display: block; color: white; text-align: center; padding: 0.875em 1em; text-decoration: none }
-li a:hover { background-color: #111 }
+.gridt { display: inline-block; text-align: center; padding: 0.875em 1em; text-decoration: none; background-color: #333; width: 100vw; font-size: 1.4em }
+    .T { display: inline-block; margin: 0em 1em 0em 0.5em; float: left}
+    .L { display: inline-block; margin: 0em 0.5em 0em 0.5em; float: left}
+    .C { display: inline-block; margin: 0em 0.5em 0em 0.5em; float: left}
+    .R { display: inline-block; margin: 0em 0.5em 0em 0.5em; float: left}
+    .gridt a { color: white; text-decoration: none}
+.gridt a:hover { background-color: #111 }
 
 /* top bar */
 .top { position: fixed; top: 0px; width: 100%; z-index: +2}
 
 /* bottom navigation bar */
-.bottom { /*position:fixed*/; bottom: 0px; width: }
-.bottomh { position:fixed; bottom: 0px; width: 100% }
+.bottomh { width: 100%; display: block; background-color: #333; font-size: 1.4em; margin-top: 5%; padding: 0.875em 1em}
+.bottomh a { color: white; text-decoration: none}
+    
+/* bottom navigation bar */
+.homepagefooter { position: absolute; bottom: 0em; width: 100%; display: block; background-color: #333; font-size: 1.4em; padding: 0.875em 1em}
+.homepagefooter a { color: white; text-decoration: none}
 
 /* title */
 .title { text-align: center; padding-bottom: 1em; width: 100vw; background-color: white; margin-top: 25vh}
@@ -164,11 +173,11 @@ img { display: block; max-width: 100%; height: }
 .sep {display: block; height: 2em; width: 100%}
 .bottomsep {display: block; height: 10em; width: 100%}
 
-.wrapper {  display: grid; grid-template-columns: 33.5% 66.5%; width: 100%}
+.wrapper {  display: grid; grid-template-columns: 33.5% 66.5%; width: 90%; margin-left: 5%; margin-right: 5%}
 .one {  grid-column: 1; grid-row: 1; grid-row-end: 3}
 .two {  grid-column: 2; grid-row: 1; margin-bottom: 1.5em}
-.two p {padding-top: 1em; margin-left: 1em; margin-right: 3em}
-.three {    grid-column: 2; grid-row: 2; margin-bottom: 1.5em}
+.two p { padding-top: 1em; margin-left: 1em; margin-right: 3em}
+.three { grid-column: 2; grid-row: 2; margin-bottom: 1.5em}
 .three p {padding-top: 1em; margin-left: 1em; margin-right: 3em}
 
 .job { display: block; position: relative; width: 90%; margin-left: 5%; margin-right: 5%}
@@ -192,8 +201,8 @@ img { display: block; max-width: 100%; height: }
 .sponsors a:hover {color:dimgrey}
 
 /*CONNECT*/
-.connect {margin-bottom: 3em; margin-top: 2em}
-.connect h2 {  font-size: 1em; margin: 0%; padding: 0.1em}
+.connect {margin-bottom: 3em; margin-top: em}
+.connect h2 {  font-size: 1.5em; margin: 0%; padding: 0.1em}
 .connect a:hover {color:dimgrey}
 
 .schedule {position: relative; text-align: left; margin-left: 25%; width: 50%; margin-bottom: 10em}
