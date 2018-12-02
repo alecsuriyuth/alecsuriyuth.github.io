@@ -140,8 +140,8 @@ body { background-color: white;  font-weight: normal; font-family: montserrat; t
 .bottomh a { color: white; text-decoration: none}
     
 /* bottom navigation bar */
-.homepagefooter { position: absolute; bottom: 0em; width: 100%; display: block; background-color: #333; font-size: 1.2em; padding: 0.875em 1em}
-.homepagefooter a { color: white; text-decoration: none}
+.bottomht { position: absolute; bottom: 0em; width: 100%; display: block; background-color: #333; font-size: 1.2em; padding: 0.875em 1em}
+.bottomht a { color: white; text-decoration: none}
 
 /* title */
 .title { text-align: center; padding-bottom: 1em; width: 100vw; background-color: white; margin-top: 25vh}
