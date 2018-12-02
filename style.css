@@ -20,7 +20,7 @@ body { background-color: white;  font-weight: normal; font-family: montserrat; t
 .bottomh a { color: white; text-decoration: none}
 
 /* homepage/connect bottom navigation bar */
-.homepagefooter { display: block; width: 100%;  position: static; bottom: 0; left: 0; background-color: #333; margin: 0.4em; padding: 0.5em }
+.homepagefooter { display: block; width: 100%;  position: fixed; bottom: 0px; left: 0px; background-color: #333; margin: 0.4em; padding: 0.5em }
 .homepagefooter a { color: white; font-weight: bold; text-decoration: none}
     
 /* title */
