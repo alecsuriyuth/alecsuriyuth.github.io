@@ -20,8 +20,8 @@ body { background-color: white;  font-weight: normal; font-family: montserrat; t
 .bottomh a { color: white; text-decoration: none; font-weight: bold;  }
 
 /* homepage/connect footer */
-.bottomht { background-color: #333; margin: 0.4em; padding: 0.5em; position: absolute; right: 0; left: 0; bottom: 0}
-.bottomht a { color: white; text-decoration: none; font-weight: bold;  }
+.bottomht { background-color: #333; margin: 0.4em; padding: 0.5em; right: 0; left: 0; bottom: 0}
+.bottomht a { color: white; text-decoration: none; font-weight: bold }
     
 /* title */
 .title { text-align: center; position: center; padding-bottom: 1em; display: block; width: 100vw; overflow: hidden}
@@ -39,18 +39,14 @@ body { background-color: white;  font-weight: normal; font-family: montserrat; t
 .content { background-color: white; text-align: center; margin-top: 12%; color: black; min-height: 100% }
 .content a { color: black; text-decoration: none}
     
-.homepagelinks {font-size: 2vw}
+.homepagelinks {font-size: 2vw; margin-bottom: 50vh}
 .homepagelinks h2 a { color: black; text-decoration: none }
 .homepagelinks a:hover {color: dimgrey}
-
-
-
 
 /* grid */
 img { display: block; max-width: 100%; height: }
 
 /* sets up grid for photos*/
-
 .grid { margin-top: 35%}
 .grid img { background-color: aqua; margin-bottom: 5%; width: 90%; margin-left: 5%; margin-right: 5%}
  
@@ -136,7 +132,7 @@ body { background-color: white;  font-weight: normal; font-family: montserrat; t
 .top { position: fixed; top: 0px; width: 100%; z-index: +2}
 
 /* bottom navigation bar */
-.bottomh { width: 100%; display: block; background-color: #333; font-size: 1.2em; margin-top: 5%; padding: 0.875em 1em}
+.bottomh { width: 100%; display: block; background-color: #333; font-size: 1.2em; margin-top: 5%; padding: 0.875em 1em; bottom: 0; position: static}
 .bottomh a { color: white; text-decoration: none}
     
 /* bottom navigation bar */
@@ -158,7 +154,7 @@ body { background-color: white;  font-weight: normal; font-family: montserrat; t
 .content a { color: black; text-decoration: none}
 
 /* grid */
-img { display: block; max-width: 100%; height: }
+img { display: block; max-width: 100% }
 
  /* sets up grid for photos*/
 .grid {  display: grid; grid-template-columns: 1fr 1fr 1fr; width: 60vw; margin-left: 20vw; margin-right: 20vw;  position: relative; margin-bottom: 5%; margin-top: 12%; grid-gap: 0.2em} 
