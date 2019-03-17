@@ -53,7 +53,7 @@ img { display: block; max-width: 100%; height: }
 .sep {display: block; height: 2em; width: 100%}
   
 /* PDF */
-embed {margin: 2em 0em 2em 0em}
+embed {margin: 2em 0em 2em 0em; position: relative; overflow: scroll}
     
 /*CYCLING*/
 .sponsors {margin-bottom: 3em; margin-top: 2em; font-size: 1em; width: 65%; margin-left: 17.5%; margin-right: 17.5%}
